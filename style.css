@@ -1,0 +1,35 @@
+body {
+  font-family: 'Inknut Antiqua', serif;
+}
+
+
+.bg-main-img {
+  background-image: url('https://s3-alpha-sig.figma.com/img/3545/731f/5f01ad804b8e58782d053c0b8acd0a4d?Expires=1653264000&Signature=UWsDDMMAOdEfjhY8RGnWHjNdq1kANCwMyfEribVn3P9yWZjUEPNwkaY0ifrnMspdKxJthkT9NaDaL5tLnrsIEZjkYi4~TmqynzcKFCU13lKojvkupJRbU-ay7ciL~~hGRErf67LwToLKo7SDpMb9NJZBTZi-tl27k9v3Nkq5zgL5bkvTLGdh-uhRzpjy-wLtjyc19RVoVaBKS07rgvloqMzkFitWHu6M7MXAggxfzMQHduR-csDg2kRSyDx0LpkNUhGQbdtkRgKhVOdZtnMzS8VjZuGITigjhxTGXPd3wnySYKPLOFrX4sa9uHeXXcy36-vn1gK35JVruxpDOQf3WA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+  /* NOTE use the percentages to to get a more exact fit and position */
+  /* background-size: 112%;
+  background-position: 18% 33%; */
+  background-size: cover;
+  background-position: center;
+  min-height: 30vh;
+}
+
+@media (max-width: 768px) {
+  .bg-main-img {
+    /* NOTE local files still need the 'url' part */
+    background-image: url('image2.jpg');
+  }
+}
+
+/* NOTE create a filter layer to apply filter properties between elements (it would look kinda like this) */
+.filter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: contrast(.5);
+}
+
+.shop-btn {
+  transform: translateY(-50%);
+}
